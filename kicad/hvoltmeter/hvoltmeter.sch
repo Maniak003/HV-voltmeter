@@ -25,7 +25,7 @@ F 3 "~" H 4750 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L My_Library:USB_B_Micro-Connector J1
+L hvoltmeter-rescue:USB_B_Micro-Connector-My_Library J1
 U 1 1 632D2EFA
 P 2650 3000
 F 0 "J1" H 2707 3375 50  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 2800 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L My_Library:STM32G031F8-My_Library D2
+L hvoltmeter-rescue:STM32G031F8-My_Library-My_Library D2
 U 1 1 632D3B69
 P 2900 4550
 F 0 "D2" H 2900 5265 50  0000 C CNN
@@ -69,7 +69,7 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_
 	-1   0    0    -1  
 $EndComp
 $Comp
-L My_Library:Conn J4
+L hvoltmeter-rescue:Conn-My_Library J4
 U 1 1 632DFC6A
 P 4450 3200
 F 0 "J4" V 4346 3248 50  0001 L CNN
@@ -165,7 +165,7 @@ Wire Wire Line
 	3900 3700 3900 3500
 Connection ~ 3900 3700
 $Comp
-L My_Library:Conn J5
+L hvoltmeter-rescue:Conn-My_Library J5
 U 1 1 632FDD5C
 P 4450 3600
 F 0 "J5" V 4438 3552 50  0001 R CNN
@@ -297,8 +297,8 @@ $Comp
 L Device:R R6
 U 1 1 63336864
 P 4750 4850
-F 0 "R6" H 4820 4896 50  0000 L CNN
-F 1 "10G" H 4820 4805 50  0000 L CNN
+F 0 "R6" H 4550 5100 50  0000 L CNN
+F 1 "5G" H 4550 5000 50  0000 L CNN
 F 2 "Resistor_SMD:R_2512_6332Metric" V 4680 4850 50  0001 C CNN
 F 3 "~" H 4750 4850 50  0001 C CNN
 	1    4750 4850
@@ -318,7 +318,7 @@ F 3 "" H 4300 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L My_Library:Conn J6
+L hvoltmeter-rescue:Conn-My_Library J6
 U 1 1 6334DD34
 P 4750 4600
 F 0 "J6" V 4646 4648 50  0001 L CNN
@@ -443,7 +443,7 @@ NoConn ~ 3350 4100
 NoConn ~ 3350 4700
 NoConn ~ 3350 4800
 $Comp
-L My_Library:Conn J3
+L hvoltmeter-rescue:Conn-My_Library J3
 U 1 1 633707DA
 P 3450 4300
 F 0 "J3" V 3346 4348 50  0001 L CNN
@@ -475,7 +475,7 @@ F 3 "" H 5600 3000 50  0001 C CNN
 $EndComp
 Connection ~ 5600 3000
 $Comp
-L My_Library:Conn J2
+L hvoltmeter-rescue:Conn-My_Library J2
 U 1 1 6336FFB2
 P 3450 4200
 F 0 "J2" V 3346 4248 50  0001 L CNN
@@ -486,7 +486,7 @@ F 3 "~" H 3450 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L My_Library:OLED049 D3
+L hvoltmeter-rescue:OLED049-My_Library D3
 U 1 1 6342BAD8
 P 5650 4300
 F 0 "D3" H 6000 3550 50  0000 L CNN
@@ -643,30 +643,25 @@ Wire Wire Line
 $Comp
 L power:+2V8 #PWR016
 U 1 1 63592993
-P 5150 4300
-F 0 "#PWR016" H 5150 4150 50  0001 C CNN
-F 1 "+2V8" V 5165 4428 50  0000 L CNN
-F 2 "" H 5150 4300 50  0001 C CNN
-F 3 "" H 5150 4300 50  0001 C CNN
-	1    5150 4300
+P 5000 4300
+F 0 "#PWR016" H 5000 4150 50  0001 C CNN
+F 1 "+2V8" V 5015 4428 50  0000 L CNN
+F 2 "" H 5000 4300 50  0001 C CNN
+F 3 "" H 5000 4300 50  0001 C CNN
+	1    5000 4300
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R8
 U 1 1 6359D97D
-P 5300 4700
-F 0 "R8" V 5300 4600 50  0000 L CNN
-F 1 "4.7k" V 5400 4450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5230 4700 50  0001 C CNN
-F 3 "~" H 5300 4700 50  0001 C CNN
-	1    5300 4700
-	0    1    1    0   
+P 5000 4450
+F 0 "R8" H 5100 4400 50  0000 L CNN
+F 1 "10k" H 5100 4500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4930 4450 50  0001 C CNN
+F 3 "~" H 5000 4450 50  0001 C CNN
+	1    5000 4450
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5450 4600 5150 4600
-Wire Wire Line
-	5150 4600 5150 4700
-Connection ~ 5150 4600
 Connection ~ 4600 5500
 Wire Wire Line
 	4500 5100 4600 5100
@@ -688,10 +683,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 5550 4500 5300
 Wire Wire Line
-	5450 4300 5150 4300
-Wire Wire Line
-	5150 4300 5150 4600
-Connection ~ 5150 4300
+	5450 4300 5250 4300
 Wire Wire Line
 	3100 3700 3500 3700
 Wire Wire Line
@@ -714,4 +706,16 @@ Wire Wire Line
 Connection ~ 4450 3100
 Wire Wire Line
 	4450 3100 4500 3100
+Wire Wire Line
+	5250 4300 5250 4600
+Wire Wire Line
+	5250 4600 5450 4600
+Connection ~ 5250 4300
+Wire Wire Line
+	5250 4300 5000 4300
+Connection ~ 5000 4300
+Wire Wire Line
+	5000 4600 5000 4700
+Wire Wire Line
+	5000 4700 5450 4700
 $EndSCHEMATC
