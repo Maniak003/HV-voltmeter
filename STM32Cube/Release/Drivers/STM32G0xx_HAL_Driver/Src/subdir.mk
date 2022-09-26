@@ -27,29 +27,6 @@ C_SRCS += \
 ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c \
 ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c 
 
-OBJS += \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc_ex.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_adc.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.o \
-./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.o 
-
 C_DEPS += \
 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.d \
 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.d \
@@ -72,6 +49,29 @@ C_DEPS += \
 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_adc.d \
 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.d \
 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.d 
+
+OBJS += \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_adc_ex.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c_ex.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_adc.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.o \
+./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes

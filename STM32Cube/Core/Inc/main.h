@@ -60,6 +60,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define AIn_Pin GPIO_PIN_7
+#define AIn_GPIO_Port GPIOB
+#define Batt_Pin GPIO_PIN_0
+#define Batt_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 ADC_HandleTypeDef hadc1;
