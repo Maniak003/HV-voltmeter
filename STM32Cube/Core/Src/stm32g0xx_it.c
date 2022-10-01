@@ -149,7 +149,7 @@ void DMA1_Channel1_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
 
-	LV = (float) adcBufer[0] / 4096 * 5.6;
+	LV = (float) adcBufer[0] / 4096 * 4.2;
 	HV = (float) adcBufer[1] / 4096 * 2.8;
   /* USER CODE END DMA1_Channel1_IRQn 0 */
   HAL_DMA_IRQHandler(&hdma_adc1);
