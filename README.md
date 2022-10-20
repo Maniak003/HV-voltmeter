@@ -8,5 +8,8 @@
       <a href="https://github.com/Maniak003/HVoltmeter/wiki" rel="nofollow">
         <img src="https://github.com/Maniak003/HV-voltmeter/blob/main/Documents/IMG_20221002_154138.jpg" alt="HVoltmeter" style="max-width: 100%;">
       </a>
+      <a href="https://github.com/Maniak003/HVoltmeter/wiki" rel="nofollow">
+        <img src="https://github.com/Maniak003/HV-voltmeter/blob/main/Documents/hvoltmeter.png" alt="HVoltmeter" style="max-width: 100%;">
+      </a>
     </body>
 </html>
